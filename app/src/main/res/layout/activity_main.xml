@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="8dp"
+        android:layout_marginHorizontal="50dp"
+        android:id="@+id/card"
+        app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+    <ImageView
+        android:id="@+id/img2"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="addImg"
+        />
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:elevation="5dp"
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Save Image"
+        android:background="@drawable/eventbg"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:onClick="upload"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycle"/>
+
+</LinearLayout>
